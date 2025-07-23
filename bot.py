@@ -90,6 +90,6 @@ def delete_telegram_message(message_id):
 while True:
     new_ads = get_otomoto_ads()
     for ad in new_ads:
-        message = f"🆕 Nowe ogłoszenie:\n{ad['title']}\n📍 {ad['location']}\n🔗 {ad['url']}"
+        message = f" Nowe ogłoszenie:\n{ad['title']}\n {ad['location']}\n {ad['url']}"
         send_telegram_message(message)
     time.sleep(600)
